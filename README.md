@@ -17,8 +17,8 @@ local entityTable = Spawner.createEntity({
         5, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
-        Max = 4,
+        Min = 10,
+        Max = 10,
         WaitTime = 2,
     },
     CamShake = {
