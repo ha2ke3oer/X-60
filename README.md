@@ -3,18 +3,18 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 -- Create entity
 local entityTable = Spawner.createEntity({
-    CustomName = "X 60", -- Custom name of your entity
+    CustomName = "C 60", -- Custom name of your entity
     Model = "rbxassetid://12289478026/", -- Can be GitHub file or rbxassetid
     Speed = 1000, -- Percentage, 100 = default Rush speed
-    DelayTime = 20, -- Time before starting cycles (seconds)
-    HeightOffset = 0,
+    DelayTime = 15, -- Time before starting cycles (seconds)
+    HeightOffset = 2,
     CanKill = true,
     KillRange = 50000,
     BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        15, -- Time (seconds)
+        5, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
@@ -34,11 +34,11 @@ local entityTable = Spawner.createEntity({
             Shake = true,
             Sound1 = {
                 10483790459, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 10 }, -- Sound properties
             },
             Sound2 = {
                 10483837590, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 10 }, -- Sound properties
             },
             Flashing = {
                 true, -- Enabled/Disabled
@@ -51,7 +51,7 @@ local entityTable = Spawner.createEntity({
             },
         },
     },
-    CustomDialog = {"You can", "put your", "custom death", "message here."}, -- Custom death message
+    CustomDialog = {"You meet", "put y", "custom death", "message here."}, -- Custom death message
 })
 
 
