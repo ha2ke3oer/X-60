@@ -19,7 +19,7 @@ local entityTable = Spawner.createEntity({
     Cycles = {
         Min = 5,
         Max = 10,
-        WaitTime = 5,
+        WaitTime = 3,
     },
     CamShake = {
         true, -- Enabled/Disabled
@@ -51,8 +51,8 @@ local entityTable = Spawner.createEntity({
             },
         },
     },
-    CustomDialog = {"You meet", "put y", "custom death", "message here."}, -- Custom death message
-})
+    CustomDialog = {"You died to who you call C-60...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to Hide when you can."}, -- Custom death message
+                })
 
 
 -----[[  Debug -=- Advanced  ]]-----
